@@ -1,41 +1,36 @@
-# 🧠 IBM Granite API Clients
+# 🤖 Agentic AI Research Assistant
 
-This repository contains multi-language code examples for interacting with IBM Granite's Prompt Lab deployment using your IBM Cloud credentials.  
-These clients allow you to send prompts and receive structured responses from IBM’s LLM-based deployment.
+An intelligent, multi-language research assistant powered by IBM Granite Foundation Models. This agent autonomously analyzes, summarizes, and responds to research queries using structured prompts and API integration.
 
----
-
-## 📌 Features
-
-- 🔐 Authenticates using IBM Cloud IAM API key
-- 🧾 Sends custom prompts (e.g., summarization, drafting, Q&A)
-- 🌍 Works across Python, Java, JavaScript, Scala, and Bash
-- 📦 Lightweight, clean, ready for integration
+> Built for **IBM SkillsBuild for Academia 2025 – Project #1: Research Agent**
 
 ---
 
-## 🌐 Languages Supported
+## 📌 Project Overview
 
-| Language   | File                                | Run Command                              |
-|------------|-------------------------------------|-------------------------------------------|
-| **Python** | `granite_api_call.py`               | `python granite_api_call.py`              |
-| **Java**   | `IBMGraniteAPICall.java`            | `javac IBMGraniteAPICall.java && java IBMGraniteAPICall` |
-| **JavaScript** | `graniteApiClient.js`           | `node graniteApiClient.js` (with `xmlhttprequest`) |
-| **Scala**  | `GraniteApiClient.scala`            | `scala GraniteApiClient.scala` or use SBT |
-| **Shell**  | `ibm_granite_api_call.sh`           | `chmod +x ibm_granite_api_call.sh && ./ibm_granite_api_call.sh` |
+**Agentic AI** is a lightweight, language-agnostic interface to IBM’s Granite AI services. It allows users to:
+
+- 🔍 Input custom research queries or documents
+- 🧠 Generate summaries, insights, or responses using agentic behavior
+- ⚙️ Run via Python, Java, Node.js, Scala, or Shell
+- 🔐 Use secure, token-based authentication with IBM Cloud
 
 ---
 
-## 🧪 Sample Prompt
+## 🛠 Features
 
-All clients send this kind of payload to Granite’s inference API:
+- 🧠 Agent-style interactions with IBM Granite (via `ai_service_stream`)
+- 🌐 Multi-language support: Python, Java, JavaScript, Scala, Shell
+- 🛡 Token-based authentication (no hardcoded API keys)
+- 📄 Flexible prompt formatting for research, Q&A, summarization
+- ⚙️ Easily deployable, portable, and cloud-ready
 
-```json
-{
-  "messages": [
-    {
-      "content": "Summarize the following abstract: AI is transforming education...",
-      "role": "user"
-    }
-  ]
-}
+---
+
+## 🚀 Quick Start
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/agentic-ai-research-assistant.git
+cd agentic-ai-research-assistant
